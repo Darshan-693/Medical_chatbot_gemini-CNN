@@ -1,0 +1,100 @@
+/* General dark mode styling */
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.welcome-section h1 {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(left, #1e90ff, #8a2be2, #ff69b4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.welcome-section h2 {
+  font-size: 1.75rem;
+  color: #b0b0b0;
+}
+
+.chat-container {
+  background-color: #2F2F2F;
+  color: white;
+  border: 1px solid #c5c5c5;
+  padding: 20px;
+  max-width: 95%;
+  font-size: medium;
+}
+
+input[type="text"] {
+  background-color: #333333;
+  color: white;
+  border: 1px solid #5A5A5A;
+}
+
+input[type="text"]::placeholder {
+  color: #B0B0B0;
+}
+
+button {
+  background: -webkit-linear-gradient(left, #1e90ff, #8a2be2, #ff69b4);
+  color: white;
+  font-weight: 500;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.clear-chat-btn {
+  background-color: #3A3A3A;
+  color: white;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.clear-chat-btn:hover {
+  background-color: #4A4A4A;
+}
+/* Loading Spinner */
+.spinner {
+  animation: spin 1s linear infinite;
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #1e90ff, #8a2be2, #ff69b4) 1;
+  border-color: transparent; /* Makes the border transparent to show the gradient */
+  border-radius: 50%; /* Makes it round */
+  height: 32px; /* Set height */
+  width: 32px; /* Set width */
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* Add custom styles for file input label */
+/* Add custom styles for file input label */
+.file-input {
+  display: none; /* Hide actual file input */
+}
+
+.file-input-label {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #1e90ff, #8a2be2, #ff69b4); /* Matching gradient */
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500; /* Match font weight */
+  margin-right: 0.5rem;
+  transition: opacity 0.2s; /* Smooth hover transition */
+}
+
+.file-input-label:hover {
+  opacity: 0.85; /* Same hover effect as other buttons */
+}
