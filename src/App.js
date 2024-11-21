@@ -11,7 +11,7 @@ const App = () => {
   const [uploadedImage, setUploadedImage] = useState(null);
   const [drb,giveImage] = useState("");
   // Initialize Gemini API
-  const api_key = "AIzaSyCxh7ulZGYUg-ZA9bL12U-ndoFP15P_oDs";
+  const api_key = "";
 
 
   const genAI = new GoogleGenerativeAI(api_key);
